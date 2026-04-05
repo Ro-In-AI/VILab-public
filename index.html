@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VILab | Voice Input Distribution Hub</title>
+    <meta name="description" content="Download the latest VILab desktop build, read the changelog, and browse the self-hosted voice platform documentation." />
+    <link rel="canonical" href="https://erroright-ai.github.io/VILab-public/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body class="">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">
+          <span class="site-brand__mark">VI</span>
+          <span class="site-brand__text">
+            <strong>VILab</strong>
+            <small>Voice input distribution hub</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/download/">Download</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/docs/">Docs</a>
+          <a href="https://github.com/ERRORIGHT-AI/VILab-public/releases">Releases</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div>
+            <span class="eyebrow">Public distribution hub</span>
+            <h1>Ship voice input as a product, not a side feature.</h1>
+            <p>
+              VILab is a desktop-first voice input platform with local speech capture, cloud text transforms,
+              self-hosted HTTP APIs, and a release pipeline built for real software distribution.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="/download/">Download VILab</a>
+              <a class="button secondary" href="/docs/">Browse Docs</a>
+              <a class="button secondary" href="/changelog/">View Changelog</a>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <strong>0.1.6</strong>
+                <span>Latest stable</span>
+              </div>
+              <div class="stat">
+                <strong>Local + Cloud</strong>
+                <span>Speech and transform routing</span>
+              </div>
+              <div class="stat">
+                <strong>Desktop + LAN</strong>
+                <span>Human UI plus reusable API layer</span>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <strong>VILab 0.1.6</strong>
+            <p>Reworked macOS global shortcuts with an event-listener backend so dictation can trigger more reliably on Apple Silicon Macs.</p>
+            <div class="button-row">
+              <a class="button primary" href="https://github.com/ERRORIGHT-AI/VILab-public/releases/latest">Latest Release</a>
+              <a class="button secondary" href="https://github.com/ERRORIGHT-AI/VILab-public/releases/latest/download/latest.json">Windows Feed</a>
+            </div>
+          </aside>
+        </section>
+        <section>
+          <div class="section-title">
+            <h2>One public entry for docs, downloads, and release trust</h2>
+            <p>
+              This repository is the public face of VILab. The private source repository stays private, while this
+              site handles the parts users need: installers, release notes, public documentation, and the updater feed.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="section-card">
+              <h3>Download with confidence</h3>
+              <p>Every release publishes installers, signatures, updater manifests, and checksums from one stable location.</p>
+            </article>
+            <article class="section-card">
+              <h3>Ship docs without extra drift</h3>
+              <p>The public site reuses the same docs build that the desktop app serves locally under <code>/docs/</code>.</p>
+            </article>
+            <article class="section-card">
+              <h3>Keep source control private</h3>
+              <p>Development stays in the private repo. Public users only see the polished distribution surface and changelog.</p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div class="section-title">
+            <h2>Built for real product rollout</h2>
+            <p>
+              VILab is more than dictation. It is a reusable voice layer that can power local desktop workflows, LAN services,
+              and future multi-client integrations without forcing one model provider or one deployment shape.
+            </p>
+          </div>
+          <div class="story-grid">
+            <article class="story-card">
+              <h3>Desktop-first capture</h3>
+              <p>Start with a local host app that handles shortcuts, recording, transcription, cleanup, and operator feedback.</p>
+            </article>
+            <article class="story-card">
+              <h3>Service-ready architecture</h3>
+              <p>Expose the same core through HTTP endpoints so scripts, LAN clients, and internal tools can reuse it.</p>
+            </article>
+            <article class="story-card">
+              <h3>Release discipline</h3>
+              <p>Versioned notes, stable update feeds, and public installers make the platform easier to trust and easier to support.</p>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div class="section-title">
+            <h2>Recent releases</h2>
+            <p>The latest stable versions stay documented here so users can decide when to upgrade and what changed.</p>
+          </div>
+          <div class="release-grid">
+<article class="release-card">
+  <div class="release-card__meta">
+    <span class="pill">v0.1.6</span>
+    <span>VILab 0.1.6</span>
+  </div>
+  <p>Reworked macOS global shortcuts with an event-listener backend so dictation can trigger more reliably on Apple Silicon Macs.</p>
+  <a class="text-link" href="/changelog/v0.1.6/">Read release notes</a>
+</article>
+<article class="release-card">
+  <div class="release-card__meta">
+    <span class="pill">v0.1.5</span>
+    <span>VILab 0.1.5</span>
+  </div>
+  <p>`VILab 0.1.5` introduces traceable transcript output variants and a browser-hosted Prompt Lab for internal prompt and model evaluation.</p>
+  <a class="text-link" href="/changelog/v0.1.5/">Read release notes</a>
+</article>
+<article class="release-card">
+  <div class="release-card__meta">
+    <span class="pill">v0.1.4</span>
+    <span>VILab 0.1.4</span>
+  </div>
+  <p>`VILab 0.1.4` adds the first desktop auto-update flow for Windows releases.</p>
+  <a class="text-link" href="/changelog/v0.1.4/">Read release notes</a>
+</article>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <strong>VILab</strong>
+          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/download/">Download</a>
+          <a href="/docs/">Docs</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="https://github.com/ERRORIGHT-AI/VILab-public/releases">GitHub Releases</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

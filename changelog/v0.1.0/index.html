@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VILab 0.1.0 | VILab Changelog</title>
+    <meta name="description" content="`VILab 0.1.0` 是面向中文团队测试与试用的首个 Windows 正式 Release。" />
+    <link rel="canonical" href="https://erroright-ai.github.io/VILab-public/changelog/v0.1.0/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body class="">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">
+          <span class="site-brand__mark">VI</span>
+          <span class="site-brand__text">
+            <strong>VILab</strong>
+            <small>Voice input distribution hub</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/download/">Download</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/docs/">Docs</a>
+          <a href="https://github.com/ERRORIGHT-AI/VILab-public/releases">Releases</a>
+        </nav>
+      </header>
+      <main>
+        <article class="release-detail">
+          <div class="release-card__meta">
+            <span class="pill">v0.1.0</span>
+            <a class="text-link" href="/changelog/">Back to changelog</a>
+          </div>
+          <h1>VILab 0.1.0</h1>
+          <h1>VILab 0.1.0</h1>
+<p><code>VILab 0.1.0</code> 是面向中文团队测试与试用的首个 Windows 正式 Release。</p>
+<h2>Hotfix</h2>
+<ul>
+<li>2026-04-01：已替换 Windows <code>setup.exe</code>，修复 NSIS 安装包缺少运行时 DLL 导致的启动闪退问题</li>
+<li>2026-04-01：修复主窗口关闭后进程未退出，导致再次启动时表现为闪退的问题</li>
+<li>2026-04-01：修复 Release 版数据目录迁移与运行时诊断持久化问题，恢复录音记录、日志信息和设置页中的最近一次录音统计展示</li>
+</ul>
+<h2>本次提供</h2>
+<ul>
+<li>Windows 安装包 <code>VILab_0.1.0_x64-setup.exe</code></li>
+<li>Windows 安装包 <code>VILab_0.1.0_x64_en-US.msi</code></li>
+<li>对应安装包的 <code>SHA256</code> 校验文件</li>
+</ul>
+<h2>本版重点</h2>
+<ul>
+<li>桌面端语音输入与听写主流程</li>
+<li>本地 STT 与云端 STT 的统一路由能力</li>
+<li>内嵌 HTTP 服务，便于局域网和自托管方向的后续集成</li>
+<li>本地语音模型管理，包括下载、激活与运行时切换</li>
+<li>设置、路由、模型状态与录音诊断信息的统一桌面端管理</li>
+</ul>
+<h2>安装建议</h2>
+<ul>
+<li>优先使用 <code>VILab_0.1.0_x64-setup.exe</code>，适合大多数 Windows 测试环境</li>
+<li>如果你更偏向标准化分发或企业安装流程，可以改用 <code>VILab_0.1.0_x64_en-US.msi</code></li>
+</ul>
+<h2>使用前说明</h2>
+<ul>
+<li>当前 <code>0.1.0</code> 仅提供 Windows 安装包</li>
+<li><code>macOS</code> 与 <code>Linux</code> 仍保留为后续支持目标，待原生环境验证稳定后补发对应安装包</li>
+<li>普通安装包用户不需要关心 <code>libclang</code> 或 ONNX Runtime 的源码构建依赖</li>
+<li>如果要使用本地 STT，请先在应用内下载并激活至少一个本地语音模型</li>
+</ul>
+<h2>发布与回归</h2>
+<ul>
+<li>Windows Release 现已接入自动化发布工作流：tag 推送后会先执行类型检查、Rust 检查、关键回归测试、正式打包和安装回归</li>
+<li>只有全部通过后，GitHub Release 资产才会被上传或替换，避免将明显不可用的安装包发布出去</li>
+</ul>
+<h2>已知范围</h2>
+<ul>
+<li>本版重点是首个可下载、可安装、可回归验证的 Windows 正式包</li>
+<li>更完整的多平台发布、增量升级与更细粒度的发布门禁会在后续版本继续补齐</li>
+</ul>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/ERRORIGHT-AI/VILab-public/releases/latest">Open latest release</a>
+            <a class="button secondary" href="/download/">Download options</a>
+          </div>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <strong>VILab</strong>
+          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/download/">Download</a>
+          <a href="/docs/">Docs</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="https://github.com/ERRORIGHT-AI/VILab-public/releases">GitHub Releases</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
