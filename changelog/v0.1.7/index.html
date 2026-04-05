@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VILab 0.1.1 | VILab Changelog</title>
-    <meta name="description" content="`VILab 0.1.1` is the first hotfix release for the Windows desktop build." />
-    <link rel="canonical" href="https://vilab.orulink.ai/changelog/v0.1.1/" />
+    <title>VILab 0.1.7 | VILab Changelog</title>
+    <meta name="description" content="Moved desktop release distribution to the public repository so installers, release notes, and updater assets can be accessed without private GitHub access." />
+    <link rel="canonical" href="https://vilab.orulink.ai/changelog/v0.1.7/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
   </head>
@@ -29,39 +29,27 @@
       <main>
         <article class="release-detail">
           <div class="release-card__meta">
-            <span class="pill">v0.1.1</span>
+            <span class="pill">v0.1.7</span>
             <a class="text-link" href="/changelog/">Back to changelog</a>
           </div>
-          <h1>VILab 0.1.1</h1>
-          <h1>VILab 0.1.1</h1>
-<p><code>VILab 0.1.1</code> is the first hotfix release for the Windows desktop build.</p>
-<h2>Fixes</h2>
+          <h1>VILab 0.1.7</h1>
+          <h2>Highlights</h2>
 <ul>
-<li>Fixed bundled docs path resolution so the packaged app no longer exits immediately on clean machines.</li>
-<li>Fixed release startup bridge races that caused empty history, empty diagnostics, stale model status, or missing microphones in the UI.</li>
-<li>Fixed local fast-mode dictation so local STT no longer fails early because a cloud transform provider key is missing.</li>
-<li>Fixed duplicate-instance startup crashes caused by port and global-hotkey conflicts.</li>
-<li>Fixed release startup verification by validating real window visibility and size instead of only checking for a process handle.</li>
+<li>Moved desktop release distribution to the public repository so installers, release notes, and updater assets can be accessed without private GitHub access.</li>
+<li>Added a public site flow with homepage, download page, changelog pages, and hosted documentation under the custom domain.</li>
+<li>Updated the desktop updater configuration so released builds can check the public repository for the latest stable version.</li>
 </ul>
-<h2>Release Assets</h2>
+<h2>Downloads</h2>
 <ul>
-<li><code>VILab_0.1.1_x64-setup.exe</code></li>
-<li><code>VILab_0.1.1_x64_en-US.msi</code></li>
-<li>SHA256 files for both installers</li>
-</ul>
-<h2>Validation</h2>
-<p>This release was validated locally before publishing with:</p>
-<ul>
-<li>TypeScript typecheck</li>
-<li>Rust cargo check</li>
-<li>Targeted Rust regression tests</li>
-<li>Full production build</li>
-<li>Windows release smoke test against the packaged installer</li>
+<li>Public site: use the public homepage, download page, and changelog as the main release entry point.</li>
+<li>Windows updater feed: <code>latest.json</code> is now published from the public release repository.</li>
+<li>Apple Silicon macOS: use the <code>.dmg</code> installer attached to this release.</li>
 </ul>
 <h2>Notes</h2>
 <ul>
-<li>This release targets Windows.</li>
-<li>Local speech models still need to be downloaded or activated inside the app before local STT can run.</li>
+<li>This version formalizes the split between the private source repository and the public distribution repository.</li>
+<li>The public site is expected to serve docs at <code>/docs/</code>, downloads at <code>/download/</code>, and release notes at <code>/changelog/</code>.</li>
+<li>Version <code>0.1.7</code> also adds internal documentation describing the new public release architecture and domain setup flow.</li>
 </ul>
           <div class="button-row">
             <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>
