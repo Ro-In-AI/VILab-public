@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VILab 0.2.0 | VILab Changelog</title>
+    <meta name="description" content="macOS 输入法升级为双词库 Profile 架构，支持在 `官方增强` 与 `rime-ice（测试项）` 之间即时切换。" />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.0/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">
+          <span class="site-brand__mark">VI</span>
+          <span class="site-brand__text">
+            <strong>VILab</strong>
+            <small>Voice input distribution hub</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/download/">Download</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/docs/">Docs</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">Releases</a>
+        </nav>
+      </header>
+      <main>
+        <article class="release-detail">
+          <div class="release-card__meta">
+            <span class="pill">v0.2.0</span>
+            <a class="text-link" href="/changelog/">Back to changelog</a>
+          </div>
+          <h1>VILab 0.2.0</h1>
+          <h1>VILab 0.2.0</h1>
+<h2>本次更新</h2>
+<ul>
+<li>macOS 输入法升级为双词库 Profile 架构，支持在 <code>官方增强</code> 与 <code>rime-ice（测试项）</code> 之间即时切换。</li>
+<li>桌面端设置页与 IME 菜单都新增词库方案入口，切换后会同步写入桥接配置并在输入法侧即时生效。</li>
+<li><code>vilab_default</code> 采用官方 <code>rime-luna-pinyin</code> 基础盘、精选 <code>THUOCL</code> 补充词和 VILab 产品术语词库，日常中文输入更稳。</li>
+<li><code>rime_ice_test</code> 调整为 no-lua 兼容形态，并补充常用短码 <code>custom_phrase</code> 兜底，方便做真实体验对比。</li>
+<li>修复了词库菜单状态与实际运行 profile 不一致、输入法设置跳转错误、配置回写竞态、后台线程输入源状态误报等关键问题。</li>
+<li>新增输入法配置指南文档，明确源码配置、安装包资源、运行时 deploy 目录以及本机调优方式。</li>
+</ul>
+<h2>重点验证</h2>
+<ul>
+<li>macOS 输入法词库切换</li>
+<li>IME bridge 配置同步</li>
+<li><code>rime-ice</code> 短码与全拼候选</li>
+<li>打包产物双 Profile 与许可证来源清单</li>
+</ul>
+<h2>已知说明</h2>
+<ul>
+<li>当前 vendored <code>librime</code> 仍带有 macOS 15.0 构建 warning；如需更稳妥覆盖 macOS 13/14，建议后续补一次更低 deployment target 的重新构建。</li>
+</ul>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>
+            <a class="button secondary" href="/download/">Download options</a>
+          </div>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <strong>VILab</strong>
+          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/download/">Download</a>
+          <a href="/docs/">Docs</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">GitHub Releases</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
