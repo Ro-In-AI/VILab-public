@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VILab 0.2.3 | VILab Changelog</title>
+    <meta name="description" content="新增历史记录完整导出能力，导出内容包含应用版本、上下文、文本、诊断与相关元数据，便于迁移、排查和归档。" />
+    <link rel="canonical" href="https://vilab.orulink.ai/changelog/v0.2.3/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">
+          <span class="site-brand__mark">VI</span>
+          <span class="site-brand__text">
+            <strong>VILab</strong>
+            <small>Voice input distribution hub</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/download/">Download</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/docs/">Docs</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">Releases</a>
+        </nav>
+      </header>
+      <main>
+        <article class="release-detail">
+          <div class="release-card__meta">
+            <span class="pill">v0.2.3</span>
+            <a class="text-link" href="/changelog/">Back to changelog</a>
+          </div>
+          <h1>VILab 0.2.3</h1>
+          <h1>VILab 0.2.3</h1>
+<h2>本次更新</h2>
+<ul>
+<li>新增历史记录完整导出能力，导出内容包含应用版本、上下文、文本、诊断与相关元数据，便于迁移、排查和归档。</li>
+<li>优化 macOS 输入法语音输入悬浮窗与流式输出，支持无输入客户端时的全局语音唤醒，并优先将全局语音快捷键路由到输入法。</li>
+<li>统一语音保留、提交与输入法安装清理流程，减少重复输入法实例、旧进程残留和重新安装后的状态不一致。</li>
+<li>修复语音唤醒后重复触发导致自动停止，以及输入法快捷键和菜单触发失效的问题。</li>
+<li>增强文本上下文测试 playground，补齐 focused text context 场景，方便验证输入法上下文行为。</li>
+</ul>
+<h2>重点验证</h2>
+<ul>
+<li>历史记录完整导出，以及导出数据中的应用版本字段</li>
+<li>macOS 输入法语音悬浮窗、流式输出、保留与提交行为</li>
+<li>无输入客户端时的全局语音唤醒，以及全局快捷键路由</li>
+<li>输入法安装清理、重复实例处理和旧进程重启流程</li>
+<li>诊断、历史记录、overlay 与发布构建相关回归测试</li>
+</ul>
+<h2>已知说明</h2>
+<ul>
+<li>macOS 与 Windows 发布包仍以 GitHub tag 触发构建，并发布到公开 Release。</li>
+<li>如果 macOS 输入法安装后仍显示旧版本，可重新运行安装流程触发清理、重载与 redeploy。</li>
+</ul>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>
+            <a class="button secondary" href="/download/">Download options</a>
+          </div>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <strong>VILab</strong>
+          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/download/">Download</a>
+          <a href="/docs/">Docs</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">GitHub Releases</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
