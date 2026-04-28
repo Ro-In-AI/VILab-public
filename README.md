@@ -2,10 +2,10 @@
 
 This repository is the public distribution surface for VILab.
 
-- Website: https://ro-in-ai.github.io/VILab-public
+- Website: https://vilab.orulink.ai
 - Downloads: https://github.com/Ro-In-AI/VILab-public/releases/latest
-- Docs: https://ro-in-ai.github.io/VILab-public/docs/
-- Changelog: https://ro-in-ai.github.io/VILab-public/changelog/
+- Docs: https://vilab.orulink.ai/docs/
+- Changelog: https://vilab.orulink.ai/changelog/
 
 ## Quick Install
 
