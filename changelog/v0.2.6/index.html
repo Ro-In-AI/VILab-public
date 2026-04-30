@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VILab 0.2.1 | VILab Changelog</title>
-    <meta name="description" content="新增热词增强链路，支持本地热词版 SenseVoice、Handy 风格评分和更稳的拼音近似匹配，减少中文专有名词误识别。" />
-    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.1/" />
+    <title>VILab 0.2.6 | VILab Changelog</title>
+    <meta name="description" content="修复 Windows 录音捕获到静音流时仍继续转写的问题：现在会在 STT 前检查音频峰值、RMS 和非零样本数，避免把全 0 音频误识别成短文本。" />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.6/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
   </head>
@@ -29,31 +29,23 @@
       <main>
         <article class="release-detail">
           <div class="release-card__meta">
-            <span class="pill">v0.2.1</span>
+            <span class="pill">v0.2.6</span>
             <a class="text-link" href="/changelog/">Back to changelog</a>
           </div>
-          <h1>VILab 0.2.1</h1>
-          <h1>VILab 0.2.1</h1>
-<h2>本次更新</h2>
+          <h1>VILab 0.2.6</h1>
+          <h1>VILab 0.2.6</h1>
+<h2>Windows 版本</h2>
 <ul>
-<li>新增热词增强链路，支持本地热词版 SenseVoice、Handy 风格评分和更稳的拼音近似匹配，减少中文专有名词误识别。</li>
-<li>接入 MiniMax 转写与改写提供商，并补齐 Anthropic 兼容请求路径，方便在桌面端和 Prompt Lab 中做更多模型对比。</li>
-<li>优化历史记录详情页，补充本地音频归档与更多诊断信息，让回看一次识别过程更直观。</li>
-<li>修复 Provider 配置持久化与桌面浮层状态同步问题，避免设置保存后丢失或界面状态不同步。</li>
-<li>修复 macOS 输入法语音与标点处理问题，提升 IME 录音输入和候选交互的稳定性。</li>
+<li>修复 Windows 录音捕获到静音流时仍继续转写的问题：现在会在 STT 前检查音频峰值、RMS 和非零样本数，避免把全 0 音频误识别成短文本。</li>
+<li>录音失败提示更明确，会指出当前输入设备没有捕获到有效音频信号，便于切换麦克风或检查系统静音状态。</li>
+<li>改进全局快捷键注册失败后的恢复逻辑：当快捷键被其他 VILab 实例或应用占用时，应用会继续运行并重试注册。</li>
+<li>加强 Windows 开发启动清理：启动前会清理本项目遗留的 Vite/Tauri 监听进程，减少 <code>5173</code>、<code>9876</code> 端口占用和 <code>app.exe</code> 文件锁导致的启动失败。</li>
 </ul>
-<h2>重点验证</h2>
+<h2>验证</h2>
 <ul>
-<li>热词词典编辑、阈值调节与命中纠正结果</li>
-<li>MiniMax 提供商接入与 Prompt Lab 对比流程</li>
-<li>历史记录详情、音频归档与诊断展示</li>
-<li>Provider 保存、重启后的配置持久化，以及桌面浮层状态同步</li>
-<li>macOS 输入法语音输入、标点插入与候选交互</li>
-</ul>
-<h2>已知说明</h2>
-<ul>
-<li>热词增强依赖随包提供的 ONNX Runtime 与本地模型资源；首次下载和初始化可能比普通识别慢一些。</li>
-<li>当前正式发布仍以 GitHub tag 触发构建和公开仓分发为准，客户端自动更新会跟随公开 Release 刷新。</li>
+<li>通过 TypeScript typecheck、ESLint、Rust 定向回归测试和格式检查。</li>
+<li>通过本地 <code>yarn dev</code> 短生命周期启动验证，确认 Vite 与内嵌 HTTP 服务可以正常启动。</li>
+<li>Windows 安装包发布前会继续执行本地 release build 与 packaged smoke，不使用 GitHub Actions 构建。</li>
 </ul>
           <div class="button-row">
             <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>

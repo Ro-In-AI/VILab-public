@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VILab 0.2.5 | VILab Changelog</title>
+    <meta name="description" content="完成 Remote-first + Embedded fallback 架构收口：新用户默认连接远程 VILab Server，旧桌面用户升级时保留本机内嵌服务模式。" />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.5/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">
+          <span class="site-brand__mark">VI</span>
+          <span class="site-brand__text">
+            <strong>VILab</strong>
+            <small>Voice input distribution hub</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/download/">Download</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/docs/">Docs</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">Releases</a>
+        </nav>
+      </header>
+      <main>
+        <article class="release-detail">
+          <div class="release-card__meta">
+            <span class="pill">v0.2.5</span>
+            <a class="text-link" href="/changelog/">Back to changelog</a>
+          </div>
+          <h1>VILab 0.2.5</h1>
+          <h1>VILab 0.2.5</h1>
+<h2>本次更新</h2>
+<ul>
+<li>完成 Remote-first + Embedded fallback 架构收口：新用户默认连接远程 VILab Server，旧桌面用户升级时保留本机内嵌服务模式。</li>
+<li>统一 Public API 契约，<code>vilab-server</code> 与桌面内嵌服务共享 <code>/health</code>、<code>/v1/models</code>、<code>/v1/audio/transcriptions</code> 的鉴权、错误响应、模型列表和转写响应行为。</li>
+<li>收紧 external API key 与 Admin Key 边界：普通客户端、SDK 和业务集成只使用 external API key；Admin Key 只用于 <code>/admin/*</code>。</li>
+<li>增强 TypeScript/Python SDK：模型 owner 字段稳定映射，转写支持 JSON/text 返回，401 错误信息更可读。</li>
+<li>补齐 Docker server smoke，对 <code>server-local</code> SenseVoice worker 转写路径做发布前验证。</li>
+<li>合入 Windows IME 阶段性成果，包括 Windows 输入法工程、候选窗、诊断和发布准备脚本。</li>
+</ul>
+<h2>重点验证</h2>
+<ul>
+<li>Remote 模式缺少 external API key 时不会发起无效连接测试，并给出本地提示。</li>
+<li><code>/v1/*</code> 只接受 external API key，拒绝把 Admin Key 当作客户端 token 使用。</li>
+<li>Embedded 与 Server 的 Public API contract tests 保持一致。</li>
+<li>Docker server smoke 覆盖 <code>vilab-server</code>、<code>vilab</code> CLI、<code>vilab-sensevoice-worker</code> 和 mock transcription。</li>
+<li>macOS/Windows 桌面能力继续保留在 Tauri 宿主与内嵌服务，不迁移到无头 Server。</li>
+</ul>
+<h2>已知说明</h2>
+<ul>
+<li>Remote 模式在本版本接管 STT；rewrite、prompt、dictionary/hotword 服务端化会在后续阶段继续推进。</li>
+<li>本机内嵌服务仍用于单机离线、LAN、Prompt Lab、输入法桥接和本地模型 fallback。</li>
+</ul>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>
+            <a class="button secondary" href="/download/">Download options</a>
+          </div>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <strong>VILab</strong>
+          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/download/">Download</a>
+          <a href="/docs/">Docs</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">GitHub Releases</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
