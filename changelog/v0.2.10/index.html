@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VILab 0.2.10 - Windows startup and overlay focus fixes (2026-05-07 CST) | VILab Changelog</title>
+    <meta name="description" content="Hidden helper processes no longer open visible PowerShell or command windows during first launch." />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.10/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles/site.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-brand" href="/">
+          <span class="site-brand__mark">VI</span>
+          <span class="site-brand__text">
+            <strong>VILab</strong>
+            <small>Voice input distribution hub</small>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="/download/">Download</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="/docs/">Docs</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">Releases</a>
+        </nav>
+      </header>
+      <main>
+        <article class="release-detail">
+          <div class="release-card__meta">
+            <span class="pill">v0.2.10</span>
+            <a class="text-link" href="/changelog/">Back to changelog</a>
+          </div>
+          <h1>VILab 0.2.10 - Windows startup and overlay focus fixes (2026-05-07 CST)</h1>
+          <h1>VILab 0.2.10 - Windows startup and overlay focus fixes (2026-05-07 CST)</h1>
+<h2>Windows startup</h2>
+<ul>
+<li>Hidden helper processes no longer open visible PowerShell or command windows during first launch.</li>
+<li>Startup work is delayed and reduced so the desktop shell can appear sooner after installation.</li>
+<li>Local STT state is restored without eagerly loading the previous model during app startup.</li>
+</ul>
+<h2>Floating overlay</h2>
+<ul>
+<li>The recording overlay now opens without activating itself on Windows, so the current typing app should keep focus when the global shortcut starts recording.</li>
+<li>Quick Actions and settings windows still request focus when they need keyboard input.</li>
+</ul>
+<h2>Validation</h2>
+<ul>
+<li>Built from the local Windows release pipeline and verified with the packaged smoke test before publishing.</li>
+</ul>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>
+            <a class="button secondary" href="/download/">Download options</a>
+          </div>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <div>
+          <strong>VILab</strong>
+          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+        </div>
+        <div class="site-footer__links">
+          <a href="/download/">Download</a>
+          <a href="/docs/">Docs</a>
+          <a href="/changelog/">Changelog</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">GitHub Releases</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
