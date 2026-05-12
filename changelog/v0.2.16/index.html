@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VILab 0.1.7 | VILab 更新日志</title>
-    <meta name="description" content="Moved desktop release distribution to the public repository so installers, release notes, and updater assets can be accessed without private GitHub access." />
-    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.1.7/" />
+    <title>VILab 0.2.16 | VILab 更新日志</title>
+    <meta name="description" content="feat: 对齐 Windows 风格拼音输入直输与候选兜底" />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.16/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
   </head>
@@ -29,27 +29,26 @@
       <main>
         <article class="release-detail">
           <div class="release-card__meta">
-            <span class="pill">v0.1.7</span>
+            <span class="pill">v0.2.16</span>
             <a class="text-link" href="/changelog/">返回更新日志</a>
           </div>
-          <h1>VILab 0.1.7</h1>
-          <h2>Highlights</h2>
+          <h1>VILab 0.2.16</h1>
+          <h1>VILab 0.2.16</h1>
+<h2>Changes</h2>
 <ul>
-<li>Moved desktop release distribution to the public repository so installers, release notes, and updater assets can be accessed without private GitHub access.</li>
-<li>Added a public site flow with homepage, download page, changelog pages, and hosted documentation under the custom domain.</li>
-<li>Updated the desktop updater configuration so released builds can check the public repository for the latest stable version.</li>
-</ul>
-<h2>Downloads</h2>
-<ul>
-<li>Public site: use the public homepage, download page, and changelog as the main release entry point.</li>
-<li>Windows updater feed: <code>latest.json</code> is now published from the public release repository.</li>
-<li>Apple Silicon macOS: use the <code>.dmg</code> installer attached to this release.</li>
-</ul>
-<h2>Notes</h2>
-<ul>
-<li>This version formalizes the split between the private source repository and the public distribution repository.</li>
-<li>The public site is expected to serve docs at <code>/docs/</code>, downloads at <code>/download/</code>, and release notes at <code>/changelog/</code>.</li>
-<li>Version <code>0.1.7</code> also adds internal documentation describing the new public release architecture and domain setup flow.</li>
+<li>feat: 对齐 Windows 风格拼音输入直输与候选兜底</li>
+<li>docs: 重构 README 为入口型结构并聚焦项目导航</li>
+<li>fix(windows): 兼容 CMD/PowerShell 终端粘贴快捷键</li>
+<li>feat: 重构高级设置语音链路视图</li>
+<li>feat: 隐藏高级设置中的热词参数展示</li>
+<li>refactor(settings): 移除高级快捷键设置</li>
+<li>refactor(settings): 优化设置页面样式并移除调试信息</li>
+<li>feat(providers): 添加 SiliconFlow 文本变换 provider 支持</li>
+<li>feat(windows-ime): Windows 输入法切换至 rime_ice_windows 词库 profile</li>
+<li>fix(settings): 改善快捷键录制失败后的重试体验</li>
+<li>fix: force ascii_punct CN by default in Windows rime_ice profile</li>
+<li>Merge pull request #132 from orulink-ai/codex/zh-public-site-redesign</li>
+<li>feat: 中文化并重设计公开网站</li>
 </ul>
           <div class="button-row">
             <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">打开最新发布</a>

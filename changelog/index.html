@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VILab Changelog</title>
-    <meta name="description" content="Read version-by-version notes for VILab desktop releases and updater changes." />
+    <title>VILab 更新日志</title>
+    <meta name="description" content="按版本查看 VILab 桌面端发布说明和 updater 变更。" />
     <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
@@ -16,33 +16,48 @@
           <span class="site-brand__mark">VI</span>
           <span class="site-brand__text">
             <strong>VILab</strong>
-            <small>Voice input distribution hub</small>
+            <small>声音输入实验室</small>
           </span>
         </a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="/download/">Download</a>
-          <a href="/changelog/">Changelog</a>
-          <a href="/docs/">Docs</a>
-          <a href="https://github.com/Ro-In-AI/VILab-public/releases">Releases</a>
+          <a href="/download/">下载</a>
+          <a href="/changelog/">更新日志</a>
+          <a href="/docs/">文档</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">发布页</a>
         </nav>
       </header>
       <main>
         <section class="section-title">
-          <span class="eyebrow">Changelog</span>
-          <h1>Release notes for every public build</h1>
+          <span class="eyebrow">更新日志</span>
+          <h1>每个公开版本的发布说明</h1>
           <p>
-            Each entry below is synced from the private source repository into the public distribution hub so the release notes stay
-            close to the actual installers and updater artifacts.
+            以下内容从私有源码仓同步到公开分发入口，确保更新说明、安装包和 updater 资产保持一致。
           </p>
         </section>
         <section class="release-grid">
 <article class="release-card">
   <div class="release-card__meta">
-    <span class="pill">v0.2.14</span>
-    <span>VILab 0.2.14</span>
+    <span class="pill">v0.2.18</span>
+    <span>VILab 0.2.18</span>
   </div>
-  <p>新增 VILab Public API v1 契约，覆盖模型列表、音频转写、Pipeline 发现、Pipeline 执行和 NDJSON 流式事件。</p>
-  <a class="text-link" href="/changelog/v0.2.14/">Read release notes</a>
+  <p>Merge branch &#39;dev&#39; of https://github.com/orulink-ai/VILab into dev</p>
+  <a class="text-link" href="/changelog/v0.2.18/">阅读更新说明</a>
+</article>
+<article class="release-card">
+  <div class="release-card__meta">
+    <span class="pill">v0.2.16</span>
+    <span>VILab 0.2.16</span>
+  </div>
+  <p>feat: 对齐 Windows 风格拼音输入直输与候选兜底</p>
+  <a class="text-link" href="/changelog/v0.2.16/">阅读更新说明</a>
+</article>
+<article class="release-card">
+  <div class="release-card__meta">
+    <span class="pill">v0.2.15</span>
+    <span>VILab 0.2.15</span>
+  </div>
+  <p>chore: 新增 SDK 发布脚本与 Codex skill</p>
+  <a class="text-link" href="/changelog/v0.2.15/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -50,7 +65,7 @@
     <span>VILab 0.2.13</span>
   </div>
   <p>支持历史记录好/坏数据打标，坏例可继续填写问题标签、期望输出和备注。</p>
-  <a class="text-link" href="/changelog/v0.2.13/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.13/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -58,7 +73,7 @@
     <span>VILab 0.2.12</span>
   </div>
   <p>Merge pull request #114 from orulink-ai/codex/issue-45-update-prompt</p>
-  <a class="text-link" href="/changelog/v0.2.12/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.12/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -66,7 +81,7 @@
     <span>VILab 0.2.11</span>
   </div>
   <p>fix: 修复 Windows 发布脚本 npm 调用</p>
-  <a class="text-link" href="/changelog/v0.2.11/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.11/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -74,7 +89,7 @@
     <span>VILab 0.2.10 - Windows startup and overlay focus fixes (2026-05-07 CST)</span>
   </div>
   <p>Hidden helper processes no longer open visible PowerShell or command windows during first launch.</p>
-  <a class="text-link" href="/changelog/v0.2.10/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.10/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -82,7 +97,7 @@
     <span>VILab 0.2.9 - Windows updater key recovery (2026-05-06 CST)</span>
   </div>
   <p>将 Windows updater 公钥恢复为当前本地发布私钥匹配的签名链，手动安装本版本后，后续版本可继续使用自动更新。</p>
-  <a class="text-link" href="/changelog/v0.2.9/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.9/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -90,7 +105,7 @@
     <span>VILab 0.2.8 - Windows 本地版 (2026-05-06 CST)</span>
   </div>
   <p>强化听写后处理 Provider 回退与诊断透明度，失败时保留更完整的上下文与日志。</p>
-  <a class="text-link" href="/changelog/v0.2.8/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.8/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -98,7 +113,7 @@
     <span>VILab 0.2.7 - Windows 本地版 (2026-05-01 20:52 CST)</span>
   </div>
   <p>修复 Windows 快捷键设置阶段的卡顿和弹窗问题：快捷键录制会先暂停全局快捷键监听，避免录制新快捷键时被旧快捷键重复触发。</p>
-  <a class="text-link" href="/changelog/v0.2.7/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.7/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -106,7 +121,7 @@
     <span>VILab 0.2.6</span>
   </div>
   <p>修复 Windows 录音捕获到静音流时仍继续转写的问题：现在会在 STT 前检查音频峰值、RMS 和非零样本数，避免把全 0 音频误识别成短文本。</p>
-  <a class="text-link" href="/changelog/v0.2.6/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.6/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -114,7 +129,7 @@
     <span>VILab 0.2.5</span>
   </div>
   <p>完成 Remote-first + Embedded fallback 架构收口：新用户默认连接远程 VILab Server，旧桌面用户升级时保留本机内嵌服务模式。</p>
-  <a class="text-link" href="/changelog/v0.2.5/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.5/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -122,7 +137,7 @@
     <span>VILab 0.2.4</span>
   </div>
   <p>fix: 修复 macOS 发布打包的 SenseVoice worker sidecar 构建</p>
-  <a class="text-link" href="/changelog/v0.2.4/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.4/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -130,7 +145,7 @@
     <span>VILab 0.2.3</span>
   </div>
   <p>新增历史记录完整导出能力，导出内容包含应用版本、上下文、文本、诊断与相关元数据，便于迁移、排查和归档。</p>
-  <a class="text-link" href="/changelog/v0.2.3/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.3/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -138,7 +153,7 @@
     <span>VILab 0.2.2</span>
   </div>
   <p>macOS 输入法接入 rime-ice Lua 能力，保留超级简拼与上游 Lua translator，提升拼音、简拼和常用短语候选质量。</p>
-  <a class="text-link" href="/changelog/v0.2.2/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.2/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -146,7 +161,7 @@
     <span>VILab 0.2.1</span>
   </div>
   <p>新增热词增强链路，支持本地热词版 SenseVoice、Handy 风格评分和更稳的拼音近似匹配，减少中文专有名词误识别。</p>
-  <a class="text-link" href="/changelog/v0.2.1/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.1/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -154,7 +169,7 @@
     <span>VILab 0.2.0</span>
   </div>
   <p>macOS 输入法升级为双词库 Profile 架构，支持在 `官方增强` 与 `rime-ice（测试项）` 之间即时切换。</p>
-  <a class="text-link" href="/changelog/v0.2.0/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.2.0/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -162,7 +177,7 @@
     <span>VILab 0.1.8</span>
   </div>
   <p>Refined the Prompt Lab workspace so source editing, variant controls, and compare actions fit more cleanly within a single screen.</p>
-  <a class="text-link" href="/changelog/v0.1.8/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.8/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -170,7 +185,7 @@
     <span>VILab 0.1.7</span>
   </div>
   <p>Moved desktop release distribution to the public repository so installers, release notes, and updater assets can be accessed without private GitHub access.</p>
-  <a class="text-link" href="/changelog/v0.1.7/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.7/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -178,7 +193,7 @@
     <span>VILab 0.1.6</span>
   </div>
   <p>Reworked macOS global shortcuts with an event-listener backend so dictation can trigger more reliably on Apple Silicon Macs.</p>
-  <a class="text-link" href="/changelog/v0.1.6/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.6/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -186,7 +201,7 @@
     <span>VILab 0.1.5</span>
   </div>
   <p>`VILab 0.1.5` introduces traceable transcript output variants and a browser-hosted Prompt Lab for internal prompt and model evaluation.</p>
-  <a class="text-link" href="/changelog/v0.1.5/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.5/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -194,7 +209,7 @@
     <span>VILab 0.1.4</span>
   </div>
   <p>`VILab 0.1.4` adds the first desktop auto-update flow for Windows releases.</p>
-  <a class="text-link" href="/changelog/v0.1.4/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.4/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -202,7 +217,7 @@
     <span>VILab 0.1.3</span>
   </div>
   <p>`VILab 0.1.3` is a Windows hotfix release for startup crashes caused by global shortcut conflicts on user machines.</p>
-  <a class="text-link" href="/changelog/v0.1.3/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.3/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -210,7 +225,7 @@
     <span>VILab 0.1.2</span>
   </div>
   <p>`VILab 0.1.2` is a Windows hotfix release focused on startup diagnostics for release-only crashes.</p>
-  <a class="text-link" href="/changelog/v0.1.2/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.2/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -218,7 +233,7 @@
     <span>VILab 0.1.1</span>
   </div>
   <p>`VILab 0.1.1` is the first hotfix release for the Windows desktop build.</p>
-  <a class="text-link" href="/changelog/v0.1.1/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.1/">阅读更新说明</a>
 </article>
 <article class="release-card">
   <div class="release-card__meta">
@@ -226,20 +241,35 @@
     <span>VILab 0.1.0</span>
   </div>
   <p>`VILab 0.1.0` 是面向中文团队测试与试用的首个 Windows 正式 Release。</p>
-  <a class="text-link" href="/changelog/v0.1.0/">Read release notes</a>
+  <a class="text-link" href="/changelog/v0.1.0/">阅读更新说明</a>
 </article>
         </section>
       </main>
       <footer class="site-footer">
-        <div>
+        <div class="site-footer__brand">
           <strong>VILab</strong>
-          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+          <p>面向桌面端、远程服务、SDK、热词上下文和长期语音理解的声音输入基础设施。</p>
         </div>
-        <div class="site-footer__links">
-          <a href="/download/">Download</a>
-          <a href="/docs/">Docs</a>
-          <a href="/changelog/">Changelog</a>
-          <a href="https://github.com/Ro-In-AI/VILab-public/releases">GitHub Releases</a>
+        <div class="site-footer__group">
+          <span>产品</span>
+          <a href="/download/">桌面客户端</a>
+          <a href="/docs/zh-CN/headless-server.html">无头服务端</a>
+          <a href="/docs/zh-CN/quick-start.html">快速开始</a>
+        </div>
+        <div class="site-footer__group">
+          <span>开发者</span>
+          <a href="/docs/zh-CN/api-reference.html">Public API</a>
+          <a href="/docs/zh-CN/integrations.html">集成方式</a>
+          <a href="/changelog/">更新日志</a>
+        </div>
+        <div class="site-footer__launch">
+          <span>当前版本 v0.2.18</span>
+          <p>Merge branch &#39;dev&#39; of https://github.com/orulink-ai/VILab into dev</p>
+          <a href="/download/">查看下载</a>
+        </div>
+        <div class="site-footer__bottom">
+          <span>公开分发链路：GitHub Releases、安装页、更新日志和 VitePress 文档统一生成。</span>
+          <span>&copy; Voice Input Lab</span>
         </div>
       </footer>
     </div>

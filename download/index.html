@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Download VILab</title>
-    <meta name="description" content="Get the latest VILab installers, updater feed, and release assets from the public distribution repository." />
+    <title>下载 VILab</title>
+    <meta name="description" content="从公开发布仓库获取最新 VILab 安装包、updater feed 和发布资产。" />
     <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/download/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
@@ -16,62 +16,77 @@
           <span class="site-brand__mark">VI</span>
           <span class="site-brand__text">
             <strong>VILab</strong>
-            <small>Voice input distribution hub</small>
+            <small>声音输入实验室</small>
           </span>
         </a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="/download/">Download</a>
-          <a href="/changelog/">Changelog</a>
-          <a href="/docs/">Docs</a>
-          <a href="https://github.com/Ro-In-AI/VILab-public/releases">Releases</a>
+          <a href="/download/">下载</a>
+          <a href="/changelog/">更新日志</a>
+          <a href="/docs/">文档</a>
+          <a href="https://github.com/Ro-In-AI/VILab-public/releases">发布页</a>
         </nav>
       </header>
       <main>
         <section class="section-title">
-          <span class="eyebrow">Download</span>
-          <h1>Get the latest stable VILab build</h1>
+          <span class="eyebrow">下载</span>
+          <h1>获取最新稳定版 VILab</h1>
           <p>
-      The public release repository hosts the installers, release notes, checksum files, and the desktop updater manifest.
-            Use the latest release page for the full asset list, or jump straight to the updater feed if you are validating the release pipeline.
+            公开发布仓库承载安装包、更新说明、校验文件和桌面端 updater manifest。
+            如果只想安装，请打开最新发布页；如果在验证发布链路，可以直接检查 latest.json。
           </p>
         </section>
         <section class="download-grid">
           <article class="download-card">
-            <h2>Latest stable</h2>
-            <p>The newest tagged release is <strong>0.2.14</strong>. Start here if you just want the current production build.</p>
+            <h2>最新稳定版</h2>
+            <p>当前最新公开版本是 <strong>0.2.18</strong>。如果只是安装生产可用版本，从这里开始。</p>
             <div class="button-row">
-              <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">Open latest release</a>
-              <a class="button secondary" href="https://github.com/Ro-In-AI/VILab-public/releases">Browse all releases</a>
+              <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">打开最新发布</a>
+              <a class="button secondary" href="https://github.com/Ro-In-AI/VILab-public/releases">浏览全部版本</a>
             </div>
           </article>
           <article class="download-card">
-            <h2>Windows auto-update feed</h2>
-            <p>The desktop updater reads a public <code>latest.json</code> manifest from this repository so users can update without private GitHub access.</p>
+            <h2>Windows 自动更新源</h2>
+            <p>桌面端 updater 会读取公开仓库里的 <code>latest.json</code>，用户不需要私有 GitHub 权限也能更新。</p>
             <div class="button-row">
-              <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest/download/latest.json">Open latest.json</a>
-              <a class="button secondary" href="/changelog/v0.2.14/">Read latest notes</a>
+              <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest/download/latest.json">打开 latest.json</a>
+              <a class="button secondary" href="/changelog/v0.2.18/">阅读本版说明</a>
             </div>
           </article>
           <article class="download-card">
-            <h2>Deployment docs</h2>
-            <p>Need setup help, LAN deployment guidance, API references, or troubleshooting? The public docs live under the same site.</p>
+            <h2>部署与集成文档</h2>
+            <p>需要快速开始、局域网部署、API 参考或排障说明时，可以直接查看同站点下的公开文档。</p>
             <div class="button-row">
-              <a class="button primary" href="/docs/">Open docs</a>
+              <a class="button primary" href="/docs/">打开文档</a>
               <a class="button secondary" href="/docs/zh-CN/">简体中文</a>
             </div>
           </article>
         </section>
       </main>
       <footer class="site-footer">
-        <div>
+        <div class="site-footer__brand">
           <strong>VILab</strong>
-          <p>Desktop-first voice input platform with local speech, cloud transforms, and self-hosted APIs.</p>
+          <p>面向桌面端、远程服务、SDK、热词上下文和长期语音理解的声音输入基础设施。</p>
         </div>
-        <div class="site-footer__links">
-          <a href="/download/">Download</a>
-          <a href="/docs/">Docs</a>
-          <a href="/changelog/">Changelog</a>
-          <a href="https://github.com/Ro-In-AI/VILab-public/releases">GitHub Releases</a>
+        <div class="site-footer__group">
+          <span>产品</span>
+          <a href="/download/">桌面客户端</a>
+          <a href="/docs/zh-CN/headless-server.html">无头服务端</a>
+          <a href="/docs/zh-CN/quick-start.html">快速开始</a>
+        </div>
+        <div class="site-footer__group">
+          <span>开发者</span>
+          <a href="/docs/zh-CN/api-reference.html">Public API</a>
+          <a href="/docs/zh-CN/integrations.html">集成方式</a>
+          <a href="/changelog/">更新日志</a>
+        </div>
+        <div class="site-footer__launch">
+          <span>当前版本 v0.2.18</span>
+          <p>Merge branch &#39;dev&#39; of https://github.com/orulink-ai/VILab into dev</p>
+          <a href="/download/">查看下载</a>
+        </div>
+        <div class="site-footer__bottom">
+          <span>公开分发链路：GitHub Releases、安装页、更新日志和 VitePress 文档统一生成。</span>
+          <span>&copy; Voice Input Lab</span>
         </div>
       </footer>
     </div>
