@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VILab 0.1.2 | VILab 更新日志</title>
-    <meta name="description" content="`VILab 0.1.2` is a Windows hotfix release focused on startup diagnostics for release-only crashes." />
-    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.1.2/" />
+    <title>VILab 0.2.23 | VILab 更新日志</title>
+    <meta name="description" content="fix: 兼容 macOS 开发者账号签名时间戳差异，降低发布流程失败率" />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.23/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
   </head>
@@ -29,38 +29,17 @@
       <main>
         <article class="release-detail">
           <div class="release-card__meta">
-            <span class="pill">v0.1.2</span>
+            <span class="pill">v0.2.23</span>
             <a class="text-link" href="/changelog/">返回更新日志</a>
           </div>
-          <h1>VILab 0.1.2</h1>
-          <h1>VILab 0.1.2</h1>
-<p><code>VILab 0.1.2</code> is a Windows hotfix release focused on startup diagnostics for release-only crashes.</p>
-<h2>Fixes</h2>
+          <h1>VILab 0.2.23</h1>
+          <h1>VILab 0.2.23</h1>
+<h2>Changes</h2>
 <ul>
-<li>Added earliest-startup trace logging so release builds now record <code>main</code>, single-instance checks, Tauri setup stages, and startup failures before the frontend is available.</li>
-<li>Captured duplicate-instance exits and setup-stage failures in <code>%APPDATA%\\com.vilab.desktop\\startup-trace.log</code>.</li>
-<li>Extended the Windows smoke test to require <code>startup-trace.log</code> to be updated during packaged-app launch.</li>
-</ul>
-<h2>Release Assets</h2>
-<ul>
-<li><code>VILab_0.1.2_x64-setup.exe</code></li>
-<li><code>VILab_0.1.2_x64_en-US.msi</code></li>
-<li>SHA256 files for both installers</li>
-</ul>
-<h2>Validation</h2>
-<p>This release was validated locally before publishing with:</p>
-<ul>
-<li>TypeScript startup regression tests</li>
-<li>Rust startup-trace tests</li>
-<li>Rust cargo check</li>
-<li>Full production build</li>
-<li>Windows release smoke test</li>
-<li>Clean-room install with <code>%APPDATA%</code> and <code>%LOCALAPPDATA%</code> state moved aside</li>
-</ul>
-<h2>Notes</h2>
-<ul>
-<li>If a machine still crashes during startup, send back <code>%APPDATA%\\com.vilab.desktop\\startup-trace.log</code>.</li>
-<li>This release targets Windows.</li>
+<li>fix: 兼容 macOS 开发者账号签名时间戳差异，降低发布流程失败率</li>
+<li>fix: 调整 macOS 发布时 IME 组件路径与更新清单逻辑</li>
+<li>chore: 修复 mac 发布签名与校验脚本的兼容问题，补齐自动更新相关场景</li>
+<li>feat: 增加本地发布环境迁移脚本与文档（与 v0.2.22 阶段性发布一起提交）</li>
 </ul>
           <div class="button-row">
             <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">打开最新发布</a>
