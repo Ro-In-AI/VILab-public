@@ -1,0 +1,11 @@
+{
+  "version": "0.2.25-rc.1",
+  "notes": "# VILab 0.2.25-rc.1\n\n## Changes\n- 临时关闭自动打标功能\n- 修复 Windows 打包版本地服务访问码串用\n- Merge pull request #161 from orulink-ai/codex/win-ime-hotkey-fix\n- fix: repair Windows IME hotkey agent",
+  "pub_date": "2026-05-19T14:43:07.752Z",
+  "platforms": {
+    "windows-x86_64-rc": {
+      "url": "https://github.com/Ro-In-AI/VILab-public/releases/download/v0.2.25-rc.1/VILab_0.2.25-rc.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUWWIzSXRxZ2dMcDZmSUE1NkMzaEx4Zm42OUZ4U1FTNy92Y1F1TmtmUlI1dlQ2Wk5wa01HNFhlMTBlVEwxd2ZjNlZaU1dQKysxNUdZc3hRa2NMVHN3bUpxRXdQQ2xyTndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjAxNzg3CWZpbGU6VklMYWJfMC4yLjI1LXJjLjFfeDY0LXNldHVwLmV4ZQovMVgrOHFLOFZZQWEwNkQrWnJwM013MmNZT3J5WVdXWlpuamR1VE1ObHhxc1AvcVB1SURGdUFlMUlBWDI0ak1qTFNpYmRYWGJYdTFvWjdwcys5UGJBUT09Cg=="
+    }
+  }
+}
