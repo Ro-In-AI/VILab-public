@@ -1,0 +1,11 @@
+{
+    "version":  "0.2.25-rc.3",
+    "notes":  "# VILab 0.2.25-rc.3\n\n## Changes\n- Merge branch \u0027dev\u0027 of https://github.com/orulink-ai/VILab into dev\n- 淇璇煶杞綍缂哄け澶фā鍨嬪悗澶勭悊\n- feat: 澧炲姞棰勮璁″垝鏇存柊閫氶亾涓庣ǔ瀹氱増鍏滃簳\n- Merge pull request #162 from orulink-ai/codex/fix-overlay-click-through-v2\n- fix: restore Windows overlay click passthrough",
+    "pub_date":  "2026-05-20T06:13:35.444Z",
+    "platforms":  {
+                      "windows-x86_64-rc":  {
+                                                "url":  "https://github.com/Ro-In-AI/VILab-public/releases/download/v0.2.25-rc.3/VILab_0.2.25-rc.3_x64-setup.exe",
+                                                "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUWWIzSXRxZ2dMcDA3SUJ5MkoxdDNCL2V6MXJLcGszSVJJTEtndVA4SDBsS0FVZXloNm1vS2dRZXVkdG9weldCZ1d2VEg5OUVuQWxoNEFRS2tJd3EwZ2NkaEI5aWYzT2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjU3ODQwCWZpbGU6VklMYWJfMC4yLjI1LXJjLjNfeDY0LXNldHVwLmV4ZQo2K3BvWjhZQ2prMWh0UDc1MzNGMkIxM29UWVhhQ0xxKzN5NjBYMjhUL0NuelVzRTJ4MFlmTUNwUHQ2d3BscFR3T3FHWWJGZ2poVFZ1ZGloZ2tjM3dEZz09Cg=="
+                                            }
+                  }
+}
