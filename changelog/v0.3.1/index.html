@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VILab 0.2.13 | VILab 更新日志</title>
-    <meta name="description" content="支持历史记录好/坏数据打标，坏例可继续填写问题标签、期望输出和备注。" />
-    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.2.13/" />
+    <title>VILab 0.3.1 | VILab 更新日志</title>
+    <meta name="description" content="Fixed the floating dictation overlay falling back to the old generic processing state after Doubao streaming ASR finished." />
+    <link rel="canonical" href="https://ro-in-ai.github.io/VILab-public/changelog/v0.3.1/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles/site.css" />
   </head>
@@ -29,19 +29,27 @@
       <main>
         <article class="release-detail">
           <div class="release-card__meta">
-            <span class="pill">v0.2.13</span>
+            <span class="pill">v0.3.1</span>
             <a class="text-link" href="/changelog/">返回更新日志</a>
           </div>
-          <h1>VILab 0.2.13</h1>
-          <h1>VILab 0.2.13</h1>
-<h2>Changes</h2>
+          <h1>VILab 0.3.1</h1>
+          <h1>VILab 0.3.1</h1>
+<h2>Fixes</h2>
 <ul>
-<li>支持历史记录好/坏数据打标，坏例可继续填写问题标签、期望输出和备注。</li>
-<li>历史导出升级为 format v3，在 JSON、月度 manifest 和 workbook 中保留坏例结构化字段，便于沉淀 bad case 测试集。</li>
-<li>历史记录页面支持分层差异展示，便于区分原始识别、文本润色和最终输出之间的差异。</li>
-<li>收紧热词润色上下文，减少非用户热词内容被错误注入 prompt 的风险。</li>
-<li>修复 Ollama 局域网文本变换测试和 Windows 发布回归测试编译问题。</li>
-<li>Windows 发布脚本补充 Rust 测试入口点降级开关和显式跳过 cargo 测试开关，保留安装包 smoke test 作为发布门槛。</li>
+<li>Fixed the floating dictation overlay falling back to the old generic processing state after Doubao streaming ASR finished.</li>
+<li>Kept the live ASR progress visible while <code>finish_recording</code> waits for the next realtime event, then moved to an explicit model-waiting stage before LLM post-processing starts.</li>
+<li>Streamed LLM post-processing deltas after ASR final so the user sees the cleanup result without replaying the full ASR transcript.</li>
+<li>Preserved the raw transcript when server-side post-processing fails, returning a warning instead of dropping the whole dictation result.</li>
+</ul>
+<h2>Providers</h2>
+<ul>
+<li>Added Doubao / Volcengine ASR provider support for App ID, Access Token, and realtime ASR parameters.</li>
+<li>Added Volcengine Ark LLM provider metadata and model discovery support.</li>
+<li>Clarified local Server and remote Server settings copy so clients use external API keys instead of admin keys.</li>
+</ul>
+<h2>Packaging</h2>
+<ul>
+<li>Windows installers continue to include local VILab Server support by building the desktop binary with the <code>server</code> feature.</li>
 </ul>
           <div class="button-row">
             <a class="button primary" href="https://github.com/Ro-In-AI/VILab-public/releases/latest">打开最新发布</a>
