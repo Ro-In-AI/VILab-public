@@ -1,11 +1,11 @@
 {
-    "version":  "0.3.1",
-    "notes":  "# VILab 0.3.1\n\n## Fixes\n\n- Fixed the floating dictation overlay falling back to the old generic processing state after Doubao streaming ASR finished.\n- Kept the live ASR progress visible while `finish_recording` waits for the next realtime event, then moved to an explicit model-waiting stage before LLM post-processing starts.\n- Streamed LLM post-processing deltas after ASR final so the user sees the cleanup result without replaying the full ASR transcript.\n- Preserved the raw transcript when server-side post-processing fails, returning a warning instead of dropping the whole dictation result.\n\n## Providers\n\n- Added Doubao / Volcengine ASR provider support for App ID, Access Token, and realtime ASR parameters.\n- Added Volcengine Ark LLM provider metadata and model discovery support.\n- Clarified local Server and remote Server settings copy so clients use external API keys instead of admin keys.\n\n## Packaging\n\n- Windows installers continue to include local VILab Server support by building the desktop binary with the `server` feature.",
-    "pub_date":  "2026-06-02T09:47:46.736Z",
-    "platforms":  {
-                      "windows-x86_64":  {
-                                             "url":  "https://github.com/Ro-In-AI/VILab-public/releases/download/v0.3.1/VILab_0.3.1_x64_en-US.msi",
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUWWIzSXRxZ2dMcDMxelFycy9ZalZ4SmhLMEZiMVRVL0ozZjVWWDBNYkYxZExUY0FRM2U0ZGVZbXpRREJvNkFMcEg5SDFtL2ZES1FwMStTNllWS29relNuK1U0MDU0NEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzk0MjIxCWZpbGU6VklMYWJfMC4zLjFfeDY0X2VuLVVTLm1zaQo2bXFXclB0OFBLTmR6TTE3a2xtblpuZFNmcFo0RGtsRkNyOUY1Qm53NFNGb0s5SnZKWmswZmRLemlUaVB3RnVlTmYrUFpZdkp5MnlRTEY2ZXFNV09DQT09Cg=="
-                                         }
-                  }
+  "version": "0.5.1",
+  "notes": "迁移 ViTalk 自动更新通道。安装后将继续从 ViTalk-public 接收 0.6.0 及后续版本。",
+  "pub_date": "2026-08-30T14:19:19.0244633Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUWWIzSXRxZ2dMcHcxTzl1cklHUzg0TE9ad29RbWRyUHhud3gvMFhiZnhGeSszc3hsTURBdmErcnJtcGtsV3FRdmlPTThha0h4T2p2NktmR1lLQ2xhWDlQdU11dTM4cmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MDk5NDI0CWZpbGU6VmlUYWxrXzAuNS4xX3g2NC1zZXR1cC5leGUKQjBXVHhFR0VnU0puYTdKc2kwUWVaNE9IeHo0MithYTdqMm5Sc214YnREOTFBTlk0SFlHUkgvRWhkYnBKcmV2dWF3SHp2YmUyaTQwaTFHNzZkZFVjQUE9PQo=",
+      "url": "https://github.com/Ro-In-AI/VILab-public/releases/download/v0.5.1/ViTalk_0.5.1_x64-setup.exe"
+    }
+  }
 }
